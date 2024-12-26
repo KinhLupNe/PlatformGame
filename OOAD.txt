@@ -1,0 +1,16 @@
+OOAD
+OOA: xác định yêu càu phần mềm
+     đặc tả yêu cầu thông qua mô hình các đối tượng và tương tác giữa chúng
+     --- gẵn với đời thực
+ood:thiết ké đối tuokwjng : phát hiện đối tượng
+                           lắp ráp đối tượng : tìm kếm đặc điểm để thêm vào thuộc tính, hàm thành phân
+                            xây dựng hệ thống : phát triển đối tuộng, tương tác cơ bản giữa chúng
+                            mở rộng hệ thống :thêm tính năng, thêm lớp mới, tượng tác các đối tượng này với các đo9í tượng có sẵn trong hệ thống
+                            tác sử dùn
+   thiết kế lớp :tạo ra lớp trước, sau đó mới nghĩ tới việc hoành thafnh và phát triển
+                 : khi phân tích hay phát triển không nên xác định tất cả các thành phần của lớp, nó tự lộ ra trong quá trình phát triển hệ thống
+                   việc phát hiện ra lớp tiện ích, cần thiết cho chương trình rất quan trọng, công việc sẽ dễ dàng hơn' 
+                  tuân thủ theo thiết ké, không nen băn khoăn 
+                  luôn giữ nguyên tắc : mọi vấn đề cần giải quyết theo phương án đơn giản nhất,, không phứ tạp hóa. nguyên lý Occam razor:Lớp đơngiản nhất bao giờ cũng 
+là lớp tốt nhất, hãy bắt đầubằng những cái đơn giản và 
+chúng ta sẽ kết thúc bằngnhững hệ thống phức tạp

@@ -10,9 +10,11 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static ex1.Game.GAME_HEIGHT;
+import static ex1.Game.GAME_WIDTH;
 import static utilz.Constants.Directions.*;
 import static utilz.Constants.PlayerConstants.*;
-
+// nơi render giao diện , thao tác người ddung
 public class GamePanel extends JPanel {
     private MouseInputs mouseInputs;
     private Game game;
@@ -28,7 +30,7 @@ public class GamePanel extends JPanel {
     }
 
     private void setPanelSize() {
-        Dimension size= new Dimension(1280,800);
+        Dimension size= new Dimension(GAME_WIDTH,GAME_HEIGHT);
         setMinimumSize(size);
         setPreferredSize(size);
         setMaximumSize(size);
@@ -45,7 +47,4 @@ public class GamePanel extends JPanel {
         super.paintComponent(g);
         game.render(g);
     }
-
-
-
 }

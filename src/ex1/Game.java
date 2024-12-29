@@ -1,17 +1,28 @@
 package ex1;
 
 import enities.Player;
+import levels.LevelManager;
 
 import java.awt.*;
 
+// chứ gameloop (xử lí fps, ups, render,updatelogic)
 public class Game implements Runnable{
     private  GameWindow gameWindow;
     private GamePanel gamePanel;
     private Thread gameThread;
     private final int FPS_SET = 120;
     private final int UPS_SET = 200;
+    private Player player;
+    private LevelManager levelManager;
 
-    Player player;
+    public final static int TILES_DEFAULT_SIZE = 32;
+    public final static float SCALE = 1.0f;
+    public final static int TILES_IN_WIDTH = 26;
+    public final static int TILES_IN_HEIGHT = 14;
+    public final static int TILES_SIZE = (int)(TILES_DEFAULT_SIZE*SCALE);
+    public final static int GAME_WIDTH = TILES_SIZE*TILES_IN_WIDTH;
+    public final static int GAME_HEIGHT = TILES_SIZE*TILES_IN_HEIGHT;
+
 
     public Game(){
         initClasses();
@@ -25,20 +36,24 @@ public class Game implements Runnable{
 
     private void initClasses() {
         player = new Player(200,200);
+        levelManager = new LevelManager(this);
     }
 
     private  void startGameLoop(){
-
         gameThread = new Thread(this);
         gameThread.start();
     }
 
     public void update(){
         player.update();
+        levelManager.update();
+
+
     }
 
     public void render(Graphics g){
         player.render(g);
+        levelManager.draw(g);
     }
 
     public Player  getPlayer(){

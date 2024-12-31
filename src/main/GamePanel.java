@@ -1,19 +1,14 @@
-package ex1;
+package main;
 
 import inputs.KeyboardInputs;
 import inputs.MouseInputs;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
 
-import static ex1.Game.GAME_HEIGHT;
-import static ex1.Game.GAME_WIDTH;
-import static utilz.Constants.Directions.*;
-import static utilz.Constants.PlayerConstants.*;
+import static main.Game.GAME_HEIGHT;
+import static main.Game.GAME_WIDTH;
+
 // nơi render giao diện , thao tác người ddung
 public class GamePanel extends JPanel {
     private MouseInputs mouseInputs;

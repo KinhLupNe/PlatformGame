@@ -1,12 +1,10 @@
 package levels;
 
-import ex1.Game;
+import main.Game;
 import utilz.LoadSave;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-
-import static ex1.Game.TILES_SIZE;
 
 public class LevelManager {
     private Game game;
@@ -37,6 +35,10 @@ public class LevelManager {
                 g.drawImage(levelSprite[index],Game.TILES_SIZE *i,Game.TILES_SIZE *j,null);
             }
         }
+    }
+
+    public Level getLCurrentLevel() {
+        return levelOne;
     }
 
     public void update(){

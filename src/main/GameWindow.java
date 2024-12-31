@@ -1,4 +1,4 @@
-package ex1;
+package main;
 
 import javax.swing.*;
 import java.awt.event.WindowEvent;

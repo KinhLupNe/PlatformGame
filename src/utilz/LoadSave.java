@@ -1,6 +1,6 @@
 package utilz;
 
-import ex1.Game;
+import main.Game;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

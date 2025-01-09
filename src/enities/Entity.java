@@ -19,7 +19,7 @@ public abstract class Entity {
         g.setColor(Color.PINK);
         g.drawRect((int)hitbox.x, (int)hitbox.y, (int)hitbox.width, (int)hitbox.height);
     }
-    protected void initHitbox(float x, float y, float w, float h) {
+    protected void initHitbox(float x, float y, int w, int h) {
         hitbox = new Rectangle2D.Float((int)x,(int)y,w,h);
     }
 //
